@@ -16,6 +16,7 @@ if [ "$1" = 'skype' ]; then
 			--disabled-login \
 			--gecos 'Skype' skype
 	fi
+        mkdir -p ~skype/Downloads
 
 	exec su skype -c "$@"
 fi
